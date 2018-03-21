@@ -1,0 +1,33 @@
+/* div */
+
+.container_box {
+  background-color: #b2b2b2;
+   background-image: linear-gradient(#e1dada, #f8890c); 
+    /* background-image: linear-gradient(#ff0000, #ffff00);  */
+}
+
+tr {
+background-color: #f9f4f4;	
+}
+.update {	
+  background-color: #f9f4f4;	
+  /* background-color: #b7b2b2; */ 
+}
+
+table {
+    font-family: arial, sans-serif;
+	border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+	border-spacing: 15px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+   /*  background-color: #dddddd; */
+}
