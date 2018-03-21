@@ -1,0 +1,37 @@
+<!-- 
+	codething.ru - полезные штучки для веб-разработчика 
+
+	AJAX и jQuery. Динамическое обновление контента. Основы.
+	Пример 3. Отправка данных на сервер в фоновом режиме и получение контента
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; Charset=UTF-8">
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>	
+	<form id="myForm">			
+<li> <label for="name">Username </label>
+ <input type="text" size="30"  name="username" id="username"  /></li>
+ <li> <label for="name">Password</label>
+ <input type="password" size="30"  name="pword" id="pword"  /></li> 		
+		<input type="submit" value="Отправить">
+	</form>	
+	<div id="content"></div>	
+	<script>
+		$(document).ready(function(){		
+			$('#myForm').submit(function(){
+				$.ajax({
+					type: "POST",
+					url: "login.php",
+					data: "username="+$("#username").val()+"&pword="+$("#pword").val(),
+					success: function(html){
+						$("#content").html(html);
+				   }
+				});
+				return false;
+			});			
+		});
+	</script>	
+</body>
+</html>

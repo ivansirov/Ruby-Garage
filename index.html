@@ -1,0 +1,91 @@
+<html>
+ <head>
+  <title>Live Add Edit Delete Task,Projects Records using PHP Ajax</title>
+  <script src="jquery-1.12.4.js"></script>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <script src="jquery.dataTables.min.js"></script>
+  <script src="dataTables.bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-datepicker.css" />
+  <script src="bootstrap-datepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="style1.css" />
+  <style>
+  body
+  {
+   margin:0;
+   padding:0;
+   background-color:#f1f1f1;
+  }
+  .box
+  {
+   width:1270px;
+   padding:20px;
+   background-color:#fff;
+   border:1px solid #ccc;
+   border-radius:5px;
+   margin-top:25px;
+   box-sizing:border-box;
+  }
+  </style>
+ </head>
+ <body>
+  <div class="container_box">
+   <h1 align="center"><b>SIMPLE TODO LISTS</b></h1>
+<br>  
+   <h1 align="center">Live Add Edit Delete Task,Projects Records using PHP Ajax</h1>
+   
+   <h1 align="center" style="border: 1px solid white; background-color:DodgerBlue; padding: 20px;">Ajax1 - Tasks</h1>
+   <br />
+   <div class="table-responsive">
+   <br />
+    <div align="right">
+	<b style="color: green; size:100px">+ </b>
+     <button type="button" name="add" id="add" class="btn btn-info">Add Task</button>
+    </div>
+    <br />
+    <div id="alert_message"></div>
+    <table id="user_data" class="table table-bordered table-striped">
+     <thead>
+      <tr>
+       <th>Task Name</th>
+       <th>Priority</th>
+	   <th>Status</th>
+	   <th>Project_id</th>	   
+       <th></th>
+      </tr>
+     </thead>
+<script src="ajax1.js"></script>	 
+    </table>
+   </div>
+
+
+
+<h1 align="center" style="border: 1px solid white; background-color:DodgerBlue; padding: 20px;">Ajax2 - Projects</h1>
+  <br />
+  <div class="table-responsive">
+   <br />
+    <div align="right">
+     <b style="color: green; size:100px">+ </b><button type="button" name="add2" id="add2" class="btn btn-info">Add Project</button>
+    </div>
+    <br />
+    <div id="alert_message"></div>
+<table id="user_data2" class="table table-bordered table-striped">
+     <thead>
+      <tr>
+       <th>Project Name</th>
+       <th>Priority</th>
+	   <th>Status</th>
+	   <th>Project_id</th>	   
+       <th></th>
+	   <th></th>
+      </tr>
+     </thead>
+	 <script src="ajax2.js"></script>
+    </table>
+    
+	
+  </div>
+ </body>
+</html>
+
+
+
